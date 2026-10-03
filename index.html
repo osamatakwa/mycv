@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرتي الذاتية وأعمالي</title>
+    <script src="./js/tailwindcss.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="fixed top-0 left-0 right-0 bg-gray-900/90 backdrop-blur-md border-b border-gray-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-blue-400">موقعي الشخصي</a>
+            <nav class="hidden md:flex space-x-6 space-x-reverse text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">من أنا</a>
+                <a href="#projects" class="hover:text-blue-400 transition">أعمالي</a>
+                <a href="#certificates" class="hover:text-blue-400 transition">الشهادات</a>
+                <a href="#contact" class="hover:text-blue-400 transition">تواصل معي</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section class="min-h-screen flex items-center justify-center pt-20 pb-12 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl">
+                <!-- ضع رابط صورتك الشخصية هنا -->
+                <img src="./img/my.png" alt="صورتي الشخصية" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">أهلاً بك، أنا <span class="text-blue-400">Osama Takwa | أسامة تقوى</span></h1>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">مهندس ومطور شغوف ببناء الحلول البرمجية وتطوير الأنظمة التقنية الحديثة.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-blue-600/30">تواصل معي</a>
+                <!-- رابط السيرة الذاتية (CV) -->
+                <a href="#" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700 px-6 py-3 rounded-lg font-medium transition">تحميل السيرة الذاتية</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من أنا (About Me) -->
+    <section id="about" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b border-gray-800 pb-4">من أنا</h2>
+            <div class="bg-gray-800/50 p-6 md:p-8 rounded-2xl border border-gray-800">
+                <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                    أنا مهندس اتصالات مبرمج أمتلك شغفاً كبيراً بتطوير البرمجيات وحل المشكلات الهندسية والتقنية. أعمل باستمرار على تطوير مهاراتي الذاتية وبناء مشاريع عملية تساهم في تقديم حلول حقيقية.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> خبرة في تطوير الويب والتطبيقات</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> شغف بالتعلم المستمر وتقنيات الأمن السيبراني</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> خلفية أكاديمية هندسية قوية</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> العمل الجماعي وإدارة المشاريع</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأعمال (Projects) -->
+    <section id="projects" class="py-20 px-4 bg-gray-850 bg-gray-950">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b border-gray-800 pb-4">أعمالي ومشاريعي</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="myprojects">
+                <!--
+                <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-md hover:border-blue-500/50 transition">
+                    <div class="h-40 bg-gray-800 flex items-center justify-center text-gray-500">
+                        <i class="fa-solid fa-code text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">name</h3>
+                        <p class="text-gray-400 text-sm mb-4">des</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs bg-blue-900/50 text-blue-300 px-2.5 py-1 rounded">gat</span>
+                            <a href="html/project.html?id=id" class="text-blue-400 hover:underline text-sm font-medium">عرض المشروع <i class="fa-solid fa-arrow-left mr-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات (Certificates) -->
+    <section id="certificates" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b border-gray-800 pb-4">الشهادات والاعتمادات</h2>
+            <div class="space-y-4" id="mycertificats">                
+                <!--
+                <div class="bg-gray-800/40 border border-gray-800 p-4 rounded-xl flex items-center justify-between hover:border-blue-500/50 transition">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">اسم الشهادة أو الدورة الثانية</h4>
+                            <p class="text-sm text-gray-400">الجهة المانحة - السنة</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-xs bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded border border-gray-700 text-gray-300 transition">عرض الشهادة</a>
+                </div>
+            -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل والسوشيال ميديا (Contact & Social) -->
+    <section id="contact" class="py-20 px-4 bg-gray-950">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">تواصل معي</h2>
+            <p class="text-gray-400 mb-8">يسعدني تواصلك معي عبر منصات التواصل الاجتماعي أو مراسلتي عبر البريد الإلكتروني.</p>
+            
+            <!-- أيقونات السوشيال ميديا -->
+            <div class="flex justify-center gap-6 mb-10 text-2xl">
+                <a href="https://linkedin.com" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/osamatakwa" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:osamatakwa2001@gmail.com" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://x.com/osama_takwa" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-x"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61594340941558" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@osama_takwa" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://t.me/osamatakwaprogramming" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://www.instagram.com/osama_takwa1/" target="_blank" class="w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <footer class="py-6 text-center text-xs text-gray-500 border-t border-gray-900 bg-gray-950">
+        <p>جميع الحقوق محفوظة © 2026 - [osama takwa | أسامة تقوى]</p>
+    </footer>
+
+</body>
+<script src="js/arr.js"></script>
+<script src="js/script.js"></script>
+</html>
