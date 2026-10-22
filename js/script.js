@@ -32,7 +32,7 @@ for(var j=0; j<mycertificatsarr.length; j++){
                 <p class="text-sm text-gray-400">${mycertificatsarr[j].from}</p>
             </div>
         </div>
-        <a href="./../html/certificat.html?id=${mycertificatsarr[j].id}" class="text-xs bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded border border-gray-700 text-gray-300 transition">عرض الشهادة</a> 
+        <a href="./html/certificat.html?id=${mycertificatsarr[j].id}" class="text-xs bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded border border-gray-700 text-gray-300 transition">عرض الشهادة</a> 
         `;
         mycertificats.appendChild(div);
 }
